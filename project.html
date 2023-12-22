@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Agusan Del Norte Emergency Hotline </title>
+    <link rel="stylesheet" href="iskat.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<body>
+    <header class="header" id="header">
+        <nav>
+            <img src="project images/plus.png">
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#Home" onclick="scrollToSection('header')">Home</a></li>
+                        <li><a href="#Aboutus" onclick="scrollToSection('Aboutus')">About</a></li>
+                        <li><a href="#Contact" onclick="scrollToSection('Contact')">Contact Us</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </header>
+        <div class="hotline-text">
+            <h1>Agusan Del Norte, Butuan City</h1>
+            <p>Emergency Hotline Numbers</p>
+            <a href="#Emergency-Hotline" onclick="scrollToSection('Emergency-Hotline')" class="button">View</a>
+            </div>
+        </div>
+    </section>
+
+<!------Hotline Section------>
+
+<section class="Emergency-Hotline" id="Emergency-Hotline"> 
+    <h1>Emergency Hotline</h1>
+    <p>Here are the up-to-date hotline numbers within Butuan City</p>
+
+<div class="Hotline">
+    <div class="hotlineitem">
+        <a href="https://web.facebook.com/CDRRMOButuan" target="_blank"><b>NDRRMC</b></a>
+        <p><b>National Disaster Risk Reduction and Management Council</b><br><br>
+            SMART: <u>0921 768 7287</u><br>
+            GLOBE:  <u>0956 133 3998</u><br>
+            PLDT: <u>815 26 07</u><br>
+            Radio Frequency- <u>155.570 MHz</u></p>
+    </div>
+
+    <div class="hotlineitem">
+        <a href="https://web.facebook.com/profile.php?id=100095350762148" target="_blank"><b>BFP</b></a>
+        <p><b>Bureau of Fire Protection</b><br><br>
+            BFP BUTUAN: <u>0917 772 6300</u><br>
+            TNT- <u>0931 721 8876</u><br>
+            TM- <u>0955 214 8542</u><br>
+            LANDLINE- <u>225 0500/ 342 8217</u></p>
+    </div>
+    
+    <div class="hotlineitem">
+        <a href="https://web.facebook.com/butuancad" target="_blank"><b>PNP</b></a>
+        <p><b>Philippine National Police</b><br><br>
+            BUTUAN CITY POLICE OFFICE: <u>0908 232 1536</u><br>
+            BUTUAN CITY POLICE STATION 1: <u>0917 315 1068</u><br>
+            BUTUAN CITY POLICE STATION 2: <u>0919 641 1020</u><br>
+            BUTUAN CITY POLICE STATION 3: <u>0998 598 7297</u><br>
+            BUTUAN CITY POLICE STATION 4: <u>0918 651 4097</u><br>
+            BUTUAN CITY POLICE STATION 5: <u>0999 506 5769</u></p>
+    </div>
+</div>
+
+<!----Contact Us Section---->
+
+<section class="Contact" id="Contact">
+    <h1>For any inquiries or feedback, please feel free to reach out to us.<br> 
+        You can contact us via email or through our website's contact form. <br>
+        We look forward to hearing from you soon!</h1>
+        <a href="mailto:scottiemichaelpaculba1@gmail.com" class="button">Contact Us</a>
+</section>
+
+<!---About Us Section---->
+<section class="Aboutus" id="Aboutus">
+    <h4>About Us</h4>
+    <p>We are a group of enthusiastic college students who have come together to create this remarkable endeavor as part of our ITE 10 coursework.<br>
+        Through countless hours of brainstorming, coding, and collaboration, we have crafted a platform that embodies our dedication and commitment to excellence.<br>
+        We are thrilled to present our project to you, and we hope you find it as exciting and innovative as we do.<br>
+        Thank you for joining us on this incredible adventure!
+    </p>
+</section>
+
+
+<script> 
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+    function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  section.scrollIntoView({behavior: "smooth"});
+    }
+</script>
+
+
+</section>
+</body>
